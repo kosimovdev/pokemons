@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- build css -->
+    <link rel="stylesheet" href="./src/dist/output.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <title>starter</title>
+</head>
+
+<body class="bg-[#FFD845]">
+    <header>
+        <navbar>
+            <div class="container p-5 mx-auto">
+                <div class="nav-box flex justify-between pt-[50px]">
+                    <span></span>
+                    <img src="./src/assets/images/logo 1.png" alt="logo" />
+                    <span class="h-[50px]"><i class="bx bx-heart text-[50px]"></i></span>
+                </div>
+            </div>
+        </navbar>
+        <nav class="mt-[70px]">
+            <div class="container mx-auto">
+                <div class="input-box">
+                    <form action="#" class="flex items-center justify-evenly">
+                        <select id="gross"
+                            class="h-[60px] w-[260px] text-center text-[24px] font-bold px-[24px] dark:bg-[#2B3844] dark:text-[white]">
+                            <option disabled selected>All</option>
+                        </select>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-[30px] flex items-center pl-3 pointer-events-none">
+                                <svg aria-hidden="true" class="w-[24px] h-[24px] text-black" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </div>
+                            <input type="search" id="defaultSearch"
+                                class="block w-[300px] h-[60px] py-[16px] px-[29px] text-[24px] font-bold text-gray-900 placeholder:text-black"
+                                placeholder="Search" required />
+                        </div>
+                        <select id="search-ABC"
+                            class="h-[60px] w-[260px] text-center text-[24px] font-bold px-[24px] dark:bg-[#2B3844] dark:text-[white]">
+                            <option disabled selected>Aa-Zz</option>
+                            <option value="A-Z"> Aa-Zz</option>
+                            <option value="rev">Zz-Aa</option>
+                        </select>
+                        <button
+                            class="h-[60px] w-[200px] text-center text-[24px] font-bold px-[24px] bg-white rounded-2xl">
+                            BUTTON
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mt-[100px]">
+            <div class="container mx-auto">
+                <div class="wrapper grid grid-cols-4 gap-8">
+                    <!-- <div class="card rounded-2xl w-[307px] min-h-[423px] bg-white">
+                        <div class="card-body grid place-content-center pt-[38px] pb-[68px]">
+                            <img class="w-[157px] h-[157px]" src="./assets/images/004 1.png" alt="#" />
+                        </div>
+                        <div class="card-footer pt-[20px] pl-[30px] pr-[30px] pb-[37px] border-t-2 border-black">
+                            <div class="flex justify-between">
+                                <div>
+                                <h1 class="text-[24px] font-bold">Pokemons</h1>
+                                <p class="text-[20px] font-medium">Grass, Poison</p>
+                                </div>
+                                <i class='bx bx-heart text-[30px]'></i>
+                            </div>
+                            <div class="box-footer flex mt-[25px]">
+                                <h6 class="text-[24px] mr-[30px] font-bold">6.9 kg</h6>
+                                <h6 class="text-[24px] font-bold">99 age</h6>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./utils.js"></script>
+<script src="./dp.js"></script>
+<script src="./main.js"></script>
+
+</html>
